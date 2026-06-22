@@ -1,12 +1,27 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
 
-import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
+
+import aws from "./assets/images/Skills/aws.png";
+import bootstrap from "./assets/images/Skills/bootstrap.png";
+import expr from "./assets/images/Skills/express.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
-import python from "./assets/images/Skills/python.png";
+import gcp from "./assets/images/Skills/gcp.png";
+import js from "./assets/images/Skills/js.png";
+import mongodb from "./assets/images/Skills/mongodb.png";
+import mysql from "./assets/images/Skills/mysql.png";
+import posgress from "./assets/images/Skills/postgress.png";
+import reactnative from "./assets/images/Skills/reactnative.png";
+import sql from "./assets/images/Skills/sql.png";
+import tailwind from "./assets/images/Skills/tailwind.png";
+import ts from "./assets/images/Skills/ts.png";
+import fbas from "./assets/images/Skills/firebase.png";
+import bull from "./assets/images/Skills/bullmq.png";
+import docker from "./assets/images/Skills/docker.png";
+import git from "./assets/images/Skills/git.png";
+import rabbit from "./assets/images/Skills/rabbitmq.png";
+import redis from "./assets/images/Skills/redis.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -58,18 +73,18 @@ export const content = {
     },
   ],
   hero: {
-    title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
+    title: "Full Stack Developer",
+    firstName: "Indranil",
+    LastName: "Hazra",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
-        count: "8+",
-        text: "Years of Experinse in Web development",
+        count: "1+",
+        text: "Years of Experinse in Full Stack Development",
       },
       {
-        count: "20+",
+        count: "4+",
         text: "Projects Worked in my career",
       },
     ],
@@ -79,34 +94,104 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "React Native",
+        para: "Cross‑platform apps, unified experience.",
+        logo: reactnative,
       },
       {
         name: "Node js",
-        para: "Lorem ipsum text  dummy",
+        para: "Powering the backend of the future.",
         logo: nodejs,
       },
       {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
+        name: "Express",
+        para: "The fast lane for Node.js.",
+        logo: expr,
       },
       {
         name: "React js",
-        para: "Lorem ipsum text  dummy",
+        para: "The engine of interactive web.",
         logo: reactjs,
       },
       {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        name: "Mongo DB",
+        para: "Scale smarter, store faster.”",
+        logo: mongodb,
       },
       {
-        name: "Python",
-        para: "Lorem ipsum text  dummy",
-        logo: python,
+        name: "Firebase",
+        para: "Data. Auth. Deploy. Firebase.",
+        logo: fbas,
+      },
+      {
+        name: "Postgress SQL",
+        para: "Relational strength, limitless scale.",
+        logo: posgress,
+      },
+      {
+        name: "My SQL",
+        para: "The backbone of data.",
+        logo: mysql,
+      },
+      {
+        name: "Google Cloud Platform",
+        para: "Scale smarter, deploy faster",
+        logo: gcp,
+      },
+      {
+        name: "Amazon Web Services",
+        para: "Secure, scalable, unstoppable.",
+        logo: aws,
+      },
+      {
+        name: "Git",
+        para: "Turning chaos into commits.",
+        logo: git,
+      },
+      {
+        name: "Docker",
+        para: "Ship apps anywhere, without the baggage.",
+        logo: docker,
+      },
+      {
+        name: "Redis",
+        para: "Speed in memory, power in simplicity.",
+        logo: redis,
+      },
+      {
+        name: "BullMQ",
+        para: "Queue it, scale it, own it.",
+        logo: bull,
+      },
+      {
+        name: "RabbitMQ",
+        para: "Hop your messages across with ease.",
+        logo: rabbit,
+      },
+      {
+        name: "Java Script",
+        para: "Making the web dance since 95.",
+        logo: js,
+      },
+      {
+        name: "TypeScript",
+        para: "JavaScript with a safety net.",
+        logo: ts,
+      },
+      {
+        name: "SQL",
+        para: "Where data finds its voice.",
+        logo: sql,
+      },
+      {
+        name: "Bootstrap",
+        para: "Style and structure, out of the box.",
+        logo: bootstrap,
+      },
+      {
+        name: "Tailwind",
+        para: "Utility-first, design at full speed.",
+        logo: tailwind,
       },
     ],
     icon: MdArrowForward,
