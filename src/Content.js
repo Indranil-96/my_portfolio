@@ -202,17 +202,17 @@ export const content = {
     service_content: [
       {
         title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "Experienced in building and maintaining dynamic websites and web applications, with a strong understanding of frontend and backend development, databases, and deployment workflows, while focusing on functionality, scalability, and user experience.",
         logo: services_logo1,
       },
       {
         title: "Mobile Application Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "Experienced in designing and developing mobile applications with a strong grasp of frontend and backend integration, database connectivity, and deployment workflows, while ensuring functionality, scalability, and an engaging user experience.",
         logo: services_logo2,
       },
       {
         title: "Programming Mentorship",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "Experienced in providing programming guidance and mentorship, helping learners understand core concepts, improve problem‑solving skills, and build confidence in coding through clear explanations and practical examples.",
         logo: services_logo3,
       },
     ],
