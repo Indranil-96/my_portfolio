@@ -13,7 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-      'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY",
       )
       .then(
         (result) => {
@@ -26,14 +29,14 @@ const Contact = () => {
         (error) => {
           console.log(error.text);
           toast.error(error.text);
-        }
+        },
       );
   };
 
   return (
     <section className="bg-dark_primary text-white" id="contact">
       <Toaster />
-      <div className="md:container px-5 py-14">
+      <div className="md:container px-4 sm:px-5 py-14">
         <h2 className="title !text-white" data-aos="fade-down">
           {Contact.title}
         </h2>
@@ -83,10 +86,16 @@ const Contact = () => {
                 key={i}
                 data-aos="fade-down"
                 data-aos-delay={i * 430}
-                className="flex items-center gap-2"
+                className="flex items-center gap-3 flex-wrap"
               >
-                <h4 className="text-white">{createElement(content.icon)}</h4>
-                <a className="font-Poppins" href={content.link} target="_blank">
+                <h4 className="text-white shrink-0">
+                  {createElement(content.icon)}
+                </h4>
+                <a
+                  className="font-Poppins break-all"
+                  href={content.link}
+                  target="_blank"
+                >
                   {content.text}
                 </a>
               </div>

@@ -22,6 +22,7 @@ import docker from "./assets/images/Skills/docker.png";
 import git from "./assets/images/Skills/git.png";
 import rabbit from "./assets/images/Skills/rabbitmq.png";
 import redis from "./assets/images/Skills/redis.png";
+import jest from "./assets/images/Skills/jest.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -193,6 +194,11 @@ export const content = {
         para: "Utility-first, design at full speed.",
         logo: tailwind,
       },
+      {
+        name: "Jest & Supertest",
+        para: "Test with confidence, code with clarity.",
+        logo: jest,
+      },
     ],
     icon: MdArrowForward,
   },
@@ -223,15 +229,15 @@ export const content = {
     image: person_project,
     project_content: [
       {
-        title: "Gym Website",
+        title: "Resturant Website",
         image: project1,
       },
       {
-        title: "Social Media web",
+        title: "Social Media Marketing website",
         image: project2,
       },
       {
-        title: "Creative Website",
+        title: "Gig Connecting Mobile App",
         image: project3,
       },
     ],
@@ -271,7 +277,7 @@ export const content = {
     subtitle: "FOR YOUR PROJECTS",
     image1: Hireme_person,
     image2: Hireme_person2,
-    para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+    para: "Skilled in building cross‑platform mobile applications with React Native, delivering smooth performance and intuitive user interfaces across iOS and Android. Proficient in the MERN stack (MongoDB, Express.js, React.js, Node.js) for developing scalable, full‑stack web applications, with expertise in designing RESTful APIs, managing databases, and creating responsive front‑end experiences backed by reliable server logic.",
     btnText: "Hire Me",
   },
   Contact: {

@@ -13,6 +13,12 @@
   html {
     scroll-behavior: smooth;
   }
+  body {
+    @apply overflow-x-hidden bg-bg_light_primary text-dark_primary;
+  }
+  img {
+    @apply max-w-full;
+  }
   h1,
   h2,
   h3,

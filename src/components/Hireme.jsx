@@ -5,7 +5,7 @@ const Hireme = () => {
 
   return (
     <section className="bg-bg_light_primary">
-      <div className="md:container px-5 pt-14">
+      <div className="md:container px-4 sm:px-5 pt-14 pb-14">
         <h2 className="title" data-aos="fade-down">
           {Hireme.title}
         </h2>
@@ -13,23 +13,22 @@ const Hireme = () => {
           {Hireme.subtitle}
         </h4>
         <br />
-        <div className="flex items-center md:flex-row flex-col-reverse ">
+        <div className="flex items-center md:flex-row flex-col-reverse gap-6 md:gap-8">
           <img
             src={Hireme.image1}
             alt="..."
             data-aos="fade-right"
-            className="max-w-sm md:block hidden"
+            className="w-full max-w-sm object-contain hidden md:block"
           />
           <img
             src={Hireme.image2}
             data-aos="fade-up"
             alt="..."
-            className="max-w-sm md:hidden"
+            className="w-full max-w-sm object-contain md:hidden"
           />
           <div
             data-aos="fade-left"
-            className="border-2 border-dark_primary max-w-sm
-           p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem]"
+            className="w-full max-w-sm border-2 border-dark_primary p-6 shadow-sm rounded-xl rounded-br-[8rem] md:min-w-[22rem]"
           >
             <p className="leading-7">{Hireme.para}</p>
             <br />

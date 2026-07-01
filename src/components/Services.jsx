@@ -4,7 +4,7 @@ const Services = () => {
   const { services } = content;
   return (
     <section id="services">
-      <div className="md:container px-5 py-14">
+      <div className="md:container px-4 sm:px-5 py-14">
         <h2 className="title" data-aos="fade-down">
           {services.title}
         </h2>
@@ -18,10 +18,13 @@ const Services = () => {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 600}
-              className="min-w-[12rem] duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-4 flex-1 group-hover:blur-sm 
-              hover:!blur-none"
+              className="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] min-w-0 duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-4 group-hover:blur-sm hover:!blur-none"
             >
-              <img src={content.logo} alt="..." className="mx-auto w-32 h-36" />
+              <img
+                src={content.logo}
+                alt="..."
+                className="mx-auto w-24 h-24 sm:w-28 sm:h-28 object-contain"
+              />
               <h6 className="my-3">{content.title}</h6>
               <p className="leading-7">{content.para}</p>
             </div>
