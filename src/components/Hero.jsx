@@ -1,61 +1,129 @@
 // import content
-import { useEffect } from "react";
 import { content } from "../Content";
+
 const Hero = () => {
   const { hero } = content;
 
   return (
     <section id="home" className="overflow-hidden">
-      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center pt-16 md:pt-0">
+      <div className="relative min-h-screen md:h-screen flex flex-col md:flex-row items-center justify-center md:gap-12 lg:gap-20 pt-24 pb-12 md:py-0">
+        {/* Background Right Side */}
         <div
           data-aos="slide-left"
           data-aos-delay="1200"
-          className="absolute inset-x-0 bottom-0 h-[35%] md:h-full md:w-4/12 md:left-auto md:right-0 md:top-0 bg-primaryLinear -z-10"
+          className="absolute inset-x-0 bottom-0 h-[20%] sm:h-[25%] md:inset-y-0 md:left-auto md:right-0 md:w-5/12 md:h-full bg-primaryLinear -z-10"
         >
-          <h1 className="absolute left-6 top-6 md:top-[30%] md:right-[-15%] md:left-auto md:rotate-90 text-[#EAF2FA] text-3xl sm:text-4xl md:text-5xl">
+          {/* UPDATED MOBILE CLASSES:
+              - Swapped layout so it behaves normally horizontally underneath the top image on mobile viewports.
+              - Desktop layout isolates custom writing-modes (`md:[writing-mode:vertical-lr]`) and right-alignment parameters (`md:right-4`).
+          */}
+          <h1
+            className="
+              absolute
+              top-4
+              left-1/2
+              -translate-x-1/2
+              text-2xl
+              sm:text-4xl
+              font-bold
+              text-[#EAF2FA]/40
+              whitespace-nowrap
+              z-0
+
+              md:top-1/2
+              md:-translate-y-1/2
+              md:translate-x-0
+              md:left-auto
+              md:right-4
+              md:[writing-mode:vertical-lr]
+              lg:text-6xl
+              md:text-[#EAF2FA]
+            "
+          >
             {hero.firstName}{" "}
             <span className="text-dark_primary">{hero.LastName}</span>
           </h1>
         </div>
 
-        {/* first col */}
+        {/* Right Image */}
         <div
-          className="w-full max-w-xl pb-16 px-4 py-4 sm:px-6 pt-5 ml-8 text-center md:text-left"
-          data-aos="fade-down"
+          data-aos="slide-up"
+          className="
+            relative
+            z-20
+            w-full
+            md:w-auto
+            flex
+            justify-center
+            items-center
+            px-4
+            order-1
+            md:order-2
+          "
         >
-          <h2>{hero.title}</h2>
-          <br />
-          <div className="flex justify-center md:justify-end">
-            <button className="btn">{hero.btnText}</button>
+          <img
+            src={hero.image}
+            alt="Hero"
+            className="
+              w-52
+              sm:w-64
+              md:w-80
+              lg:w-[400px]
+              xl:w-[460px]
+              h-auto
+              object-contain
+            "
+          />
+        </div>
+
+        {/* Left Content */}
+        <div
+          data-aos="fade-down"
+          className="
+            relative
+            z-20
+            w-full
+            md:w-1/2
+            max-w-xl
+            p-6
+            sm:p-4
+            md:p-4
+            text-center
+            md:text-left
+            order-2
+            md:order-1
+            mb-10
+          "
+        >
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+            {hero.title}
+          </h2>
+
+          <div className="mt-4 flex justify-center md:justify-start">
+            <button className="btn text-dark_primary hover:bg-dark_primary hover:text-white transition-all ease-in">
+              {hero.btnText}
+            </button>
           </div>
-          <div className="flex flex-col gap-6 sm:gap-8 mt-8 sm:mt-10">
-            {hero.hero_content.map((content, i) => (
+
+          {/* Writeups */}
+          <div className="mt-8 space-y-6 sm:space-y-8">
+            {hero.hero_content.map((item, i) => (
               <div
                 key={i}
                 data-aos="fade-down"
                 data-aos-delay={i * 300}
-                className={`flex items-center gap-5 w-full max-w-md mx-auto md:mx-0 ${
-                  i === 1
-                    ? "md:flex-row-reverse md:text-right flex-row text-left"
-                    : ""
+                className={`flex items-center gap-4 text-left ${
+                  i === 1 ? "md:flex-row-reverse md:text-right" : ""
                 }`}
               >
-                <h3 className="shrink-0">{content.count}</h3>
-                <p>{content.text}</p>
+                <h3 className="text-3xl sm:text-4xl font-bold shrink-0">
+                  {item.count}
+                </h3>
+
+                <p className="text-sm sm:text-base leading-7">{item.text}</p>
               </div>
             ))}
           </div>
-        </div>
-
-        {/* sec col */}
-        {/* sm:h-80 max-w-[30rem] sm:max-w-[30rem] md:max-w-none md:h-[37rem] */}
-        <div className="w-72 max-w-[22rem] sm:max-w-[24rem] md:max-w-none md:h-[37rem] h-72 sm:h-80 flex justify-end items-center">
-          <img
-            src={hero.image}
-            data-aos="slide-up"
-            alt="..."
-            className="h-auto w-auto object-contain md:object-cover"
-          />
         </div>
       </div>
     </section>

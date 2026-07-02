@@ -23,6 +23,7 @@ import git from "./assets/images/Skills/git.png";
 import rabbit from "./assets/images/Skills/rabbitmq.png";
 import redis from "./assets/images/Skills/redis.png";
 import jest from "./assets/images/Skills/jest.png";
+import expo from "./assets/images/Skills/expo.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -98,6 +99,11 @@ export const content = {
         name: "React Native",
         para: "Cross‑platform apps, unified experience.",
         logo: reactnative,
+      },
+      {
+        name: "Expo",
+        para: "From idea to app store — Expo makes it seamless.",
+        logo: expo,
       },
       {
         name: "Node js",
@@ -285,19 +291,19 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "codeaprogram@gmail.com",
+        text: "hazraindranil399@gmail.com",
         icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
+        link: "mailto:hazraindranil399@gmail.com",
       },
       {
-        text: "+91 1234 56778",
+        text: "+91 8436423150",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "https://wa.me/+91 8436423150",
       },
       {
-        text: "codeaprogram",
+        text: "Indranil Hazra",
         icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
+        link: "https://www.instagram.com/indranil.hazra.771/",
       },
     ],
   },
