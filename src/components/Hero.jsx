@@ -4,6 +4,13 @@ import { content } from "../Content";
 const Hero = () => {
   const { hero } = content;
 
+  const hireMe = () => {
+    window.open(
+      "https://wa.me/918436423150?text=Hi Indranil, I’d like to hire you!",
+      "_blank",
+    );
+  };
+
   return (
     <section id="home" className="overflow-hidden">
       <div className="relative min-h-screen md:h-screen flex flex-col md:flex-row items-center justify-center md:gap-12 lg:gap-20 pt-24 pb-12 md:py-0">
@@ -100,7 +107,10 @@ const Hero = () => {
           </h2>
 
           <div className="mt-4 flex justify-center md:justify-start">
-            <button className="btn text-dark_primary hover:bg-dark_primary hover:text-white transition-all ease-in">
+            <button
+              onClick={hireMe}
+              className="btn text-dark_primary hover:bg-dark_primary hover:text-white transition-all ease-in"
+            >
               {hero.btnText}
             </button>
           </div>

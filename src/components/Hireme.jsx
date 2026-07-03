@@ -3,6 +3,13 @@ import { content } from "../Content";
 const Hireme = () => {
   const { Hireme } = content;
 
+  const hireMe = () => {
+    window.open(
+      "https://wa.me/918436423150?text=Hi Indranil, I’d like to hire you!",
+      "_blank",
+    );
+  };
+
   return (
     <section className="bg-bg_light_primary">
       <div className="md:container px-4 sm:px-5 pt-14 pb-14">
@@ -32,7 +39,10 @@ const Hireme = () => {
           >
             <p className="leading-7">{Hireme.para}</p>
             <br />
-            <button className="btn bg-dark_primary text-white hover:bg-white hover:text-dark_primary transition-all ease-in">
+            <button
+              onClick={hireMe}
+              className="btn bg-dark_primary text-white hover:bg-white hover:text-dark_primary transition-all ease-in"
+            >
               {Hireme.btnText}
             </button>
           </div>
