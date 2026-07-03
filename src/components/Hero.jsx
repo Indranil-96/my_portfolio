@@ -106,12 +106,16 @@ const Hero = () => {
             {hero.title}
           </h2>
 
-          <div className="mt-4 flex justify-center md:justify-start">
+          <div className="mt-4 flex gap-4 justify-center md:justify-start">
             <button
               onClick={hireMe}
               className="btn text-dark_primary hover:bg-dark_primary hover:text-white transition-all ease-in"
             >
               {hero.btnText}
+            </button>
+            {/* Addational Button for project showcase */}
+            <button className="btn text-dark_primary py-4 hover:bg-dark_primary hover:text-white transition-all ease-in">
+              Digital Heros
             </button>
           </div>
 

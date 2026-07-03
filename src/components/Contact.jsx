@@ -12,23 +12,25 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form.current,
-        "YOUR_PUBLIC_KEY",
-      )
+      .send(
+        "service_ktd2l4b",
+        "template_5qt7zcp",
+        {
+          name: "Indranil",
+          title: "Hazra",
+          email: "indranilhazra7@gmail.com",
+        },
+        "3eu0FBm0QQmVpcisU",
+      ) // Public Key
       .then(
         (result) => {
           console.log(result.text);
-          // Clear all input field values
           form.current.reset();
-          // Success toast message
-          toast.success("Email send Successfully");
+          toast.success("Email sent successfully!");
         },
         (error) => {
-          console.log(error.text);
-          toast.error(error.text);
+          console.error(error.text);
+          toast.error("Failed to send email: " + error.text);
         },
       );
   };
