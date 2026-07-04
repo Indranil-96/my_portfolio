@@ -28,9 +28,11 @@ const App = () => {
       <Projects />
       <Hireme />
       <Contact />
-      <footer className="p-3 text-center">
+      <footer className="p-3 gap-4 text-center">
         <h6 className="mb-3">INDRANIL HAZRA</h6>
-        <p>© All CopyRights Reserved 2026</p>
+        <p>
+          Developed and Maintained by Indranil © All CopyRights Reserved 2026
+        </p>
       </footer>
     </div>
   );

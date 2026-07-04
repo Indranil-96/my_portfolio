@@ -2,14 +2,35 @@ import { createElement, useRef } from "react";
 import { content } from "../Content";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
+import { collection, addDoc } from "firebase/firestore";
+import db from "../config/firebase.config.js";
 
 const Contact = () => {
   const { Contact } = content;
   const form = useRef();
 
   // Sending Email
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
+    // restricting default behaviour....
     e.preventDefault();
+
+    // getting data from formData() web api...
+    const formData = new FormData(e.target);
+
+    // making object with formData()......
+    const ufData = {
+      name: formData.get("from_name"),
+      email: formData.get("user_email"),
+      message: formData.get("message"),
+    };
+
+    // adding data to firebase.....
+    try {
+      await addDoc(collection(db, "formData"), ufData);
+      console.log(" Data has been added successfully to firestore database");
+    } catch (err) {
+      console.error("An error occured while adding data to firebase", err);
+    }
 
     emailjs
       .send(
@@ -64,7 +85,6 @@ const Contact = () => {
             <input
               type="email"
               name="user_email"
-              pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
               placeholder="Email Id"
               required
               className="border border-slate-600 p-3 rounded"
