@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import { collection, addDoc } from "firebase/firestore";
 import db from "../config/firebase.config.js";
+import { data } from "autoprefixer";
 
 const Contact = () => {
   const { Contact } = content;
@@ -22,6 +23,7 @@ const Contact = () => {
       name: formData.get("from_name"),
       email: formData.get("user_email"),
       message: formData.get("message"),
+      createdAt: new Date(),
     };
 
     // adding data to firebase.....
@@ -38,8 +40,9 @@ const Contact = () => {
         "template_5qt7zcp",
         {
           name: "Indranil",
-          title: "Hazra",
+          title: formData.get("from_name"),
           email: "indranilhazra7@gmail.com",
+          message: formData.get("message"),
         },
         "3eu0FBm0QQmVpcisU",
       ) // Public Key

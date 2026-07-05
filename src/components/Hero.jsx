@@ -11,6 +11,10 @@ const Hero = () => {
     );
   };
 
+  const digiHero = () => {
+    window.open("https://gergon-remover.netlify.app/");
+  };
+
   return (
     <section id="home" className="overflow-hidden">
       <div className="relative min-h-screen md:h-screen flex flex-col md:flex-row items-center justify-center md:gap-12 lg:gap-20 pt-24 pb-12 md:py-0">
@@ -114,7 +118,10 @@ const Hero = () => {
               {hero.btnText}
             </button>
             {/* Addational Button for project showcase */}
-            <button className="btn text-dark_primary py-4 hover:bg-dark_primary hover:text-white transition-all ease-in">
+            <button
+              onClick={digiHero}
+              className="btn text-dark_primary py-4 hover:bg-dark_primary hover:text-white transition-all ease-in"
+            >
               Digital Heros
             </button>
           </div>
