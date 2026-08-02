@@ -122,7 +122,7 @@ const Hero = () => {
               onClick={digiHero}
               className="btn text-dark_primary py-4 hover:bg-dark_primary hover:text-white transition-all ease-in"
             >
-              Digital Heros
+              Live Works
             </button>
           </div>
 

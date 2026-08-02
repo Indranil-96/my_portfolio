@@ -12,7 +12,6 @@ import js from "./assets/images/Skills/js.png";
 import mongodb from "./assets/images/Skills/mongodb.png";
 import mysql from "./assets/images/Skills/mysql.png";
 import posgress from "./assets/images/Skills/postgress.png";
-import reactnative from "./assets/images/Skills/reactnative.png";
 import sql from "./assets/images/Skills/sql.png";
 import tailwind from "./assets/images/Skills/tailwind.png";
 import ts from "./assets/images/Skills/ts.png";
@@ -23,7 +22,8 @@ import git from "./assets/images/Skills/git.png";
 import rabbit from "./assets/images/Skills/rabbitmq.png";
 import redis from "./assets/images/Skills/redis.png";
 import jest from "./assets/images/Skills/jest.png";
-import expo from "./assets/images/Skills/expo.png";
+import next from "./assets/images/Skills/next.png";
+
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -34,10 +34,6 @@ import project2 from "./assets/images/projects/img2.png";
 import project3 from "./assets/images/projects/img3.png";
 import person_project from "./assets/images/projects/person.png";
 
-import avatar1 from "./assets/images/Testimonials/avatar1.png";
-import avatar2 from "./assets/images/Testimonials/avatar2.png";
-import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
@@ -97,14 +93,14 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "React Native",
-        para: "Cross‑platform apps, unified experience.",
-        logo: reactnative,
+        name: "React js",
+        para: "The engine of interactive web.",
+        logo: reactjs,
       },
       {
-        name: "Expo",
-        para: "From idea to app store — Expo makes it seamless.",
-        logo: expo,
+        name: "Next.js",
+        para: "Where frontend meets full‑stack speed.",
+        logo: next,
       },
       {
         name: "Node js",
@@ -115,11 +111,6 @@ export const content = {
         name: "Express",
         para: "The fast lane for Node.js.",
         logo: expr,
-      },
-      {
-        name: "React js",
-        para: "The engine of interactive web.",
-        logo: reactjs,
       },
       {
         name: "Mongo DB",
@@ -214,13 +205,13 @@ export const content = {
     subtitle: "WHAT I OFFER",
     service_content: [
       {
-        title: "Web Development",
+        title: "Web Development & Custom Software Development",
         para: "Experienced in building and maintaining dynamic websites and web applications, with a strong understanding of frontend and backend development, databases, and deployment workflows, while focusing on functionality, scalability, and user experience.",
         logo: services_logo1,
       },
       {
-        title: "Mobile Application Development",
-        para: "Experienced in designing and developing mobile applications with a strong grasp of frontend and backend integration, database connectivity, and deployment workflows, while ensuring functionality, scalability, and an engaging user experience.",
+        title: "Specilized Service",
+        para: "I craft SEO‑ready Next.js personal websites that showcase dynamic portfolios, provide MERN‑powered career guides, deliver tailored interview preparation, and enable hands‑on project building — all designed for seamless functionality, scalability, and engaging user experiences.",
         logo: services_logo2,
       },
       {
@@ -249,42 +240,13 @@ export const content = {
       },
     ],
   },
-  Testimonials: {
-    title: "Testimonials",
-    subtitle: "MY CLIENT REVIEWS",
-    testimonials_content: [
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar1,
-        name: "JOHN DOE",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar2,
-        name: "Tom Alex",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar3,
-        name: "Johnny",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
-      },
-    ],
-  },
+
   Hireme: {
     title: "Hire Me",
     subtitle: "FOR YOUR PROJECTS",
     image1: Hireme_person,
     image2: Hireme_person2,
-    para: "Skilled in building cross‑platform mobile applications with React Native, delivering smooth performance and intuitive user interfaces across iOS and Android. Proficient in the MERN stack (MongoDB, Express.js, React.js, Node.js) for developing scalable, full‑stack web applications, with expertise in designing RESTful APIs, managing databases, and creating responsive front‑end experiences backed by reliable server logic.",
+    para: "Skilled in building scalable, full‑stack web applications with the MERN stack (MongoDB, Express.js, React.js, Node.js) and Next.js, delivering smooth performance, SEO‑friendly architecture, and intuitive user interfaces. Proficient in designing RESTful APIs, managing databases, and creating responsive front‑end experiences backed by reliable server logic.",
     btnText: "Hire Me",
   },
   Contact: {
