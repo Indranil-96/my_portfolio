@@ -31,7 +31,7 @@ const Hireme = () => {
             src={Hireme.image2}
             data-aos="fade-up"
             alt="..."
-            className="w-full max-w-sm object-contain md:hidden"
+            className="w-24 h-auto max-w-sm object-contain md:hidden"
           />
           <div
             data-aos="fade-left"

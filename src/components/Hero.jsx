@@ -11,8 +11,8 @@ const Hero = () => {
     );
   };
 
-  const digiHero = () => {
-    window.open("https://gergon-remover.netlify.app/");
+  const dashboard = () => {
+    window.open("https://ih-personal-dashboard.netlify.app/");
   };
 
   return (
@@ -119,7 +119,7 @@ const Hero = () => {
             </button>
             {/* Addational Button for project showcase */}
             <button
-              onClick={digiHero}
+              onClick={dashboard}
               className="btn text-dark_primary py-4 hover:bg-dark_primary hover:text-white transition-all ease-in"
             >
               Live Works
