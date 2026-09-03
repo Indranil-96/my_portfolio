@@ -100,26 +100,25 @@ export const content = {
         logo: Salesforce,
       },
       {
+        name: "Lightning Experience",
+        para: "Powering CRM at the speed of innovation.",
+        logo: flows,
+      },
+      {
         name: "APEX",
         para: "Where business logic meets cloud precision.",
         logo: apex,
       },
       {
-        name: "LWC",
+        name: "Lightning Web Component",
         para: "Where modern UI sparks Salesforce speed.",
         logo: lwc,
       },
       {
         name: "SOQL & SOSL",
-        para: "Where modern UI sparks Salesforce speed.",
+        para: "SOQL for precision, SOSL for speed.",
         logo: soql,
       },
-      {
-        name: "Flows",
-        para: "Where modern UI sparks Salesforce speed.",
-        logo: flows,
-      },
-
       {
         name: "React js",
         para: "The engine of interactive web.",
