@@ -14,15 +14,17 @@ import mysql from "./assets/images/Skills/mysql.png";
 import posgress from "./assets/images/Skills/postgress.png";
 import sql from "./assets/images/Skills/sql.png";
 import tailwind from "./assets/images/Skills/tailwind.png";
-import ts from "./assets/images/Skills/ts.png";
 import fbas from "./assets/images/Skills/firebase.png";
 import bull from "./assets/images/Skills/bullmq.png";
 import docker from "./assets/images/Skills/docker.png";
 import git from "./assets/images/Skills/git.png";
 import rabbit from "./assets/images/Skills/rabbitmq.png";
 import redis from "./assets/images/Skills/redis.png";
-import jest from "./assets/images/Skills/jest.png";
-import next from "./assets/images/Skills/next.png";
+import Salesforce from "./assets/images/Skills/salesforce.png";
+import apex from "./assets/images/Skills/apex.png";
+import lwc from "./assets/images/Skills/lwc.png";
+import soql from "./assets/images/Skills/soql.png";
+import flows from "./assets/images/Skills/flows.jpg";
 
 
 import services_logo1 from "./assets/images/Services/logo1.png";
@@ -72,7 +74,7 @@ export const content = {
     },
   ],
   hero: {
-    title: "Full Stack Developer",
+    title: "Software Engineer",
     firstName: "Indranil",
     LastName: "Hazra",
     btnText: "Hire Me",
@@ -93,14 +95,35 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
+        name: "Salesforce",
+        para: "Where customer success drives cloud innovation.",
+        logo: Salesforce,
+      },
+      {
+        name: "APEX",
+        para: "Where business logic meets cloud precision.",
+        logo: apex,
+      },
+      {
+        name: "LWC",
+        para: "Where modern UI sparks Salesforce speed.",
+        logo: lwc,
+      },
+      {
+        name: "SOQL & SOSL",
+        para: "Where modern UI sparks Salesforce speed.",
+        logo: soql,
+      },
+      {
+        name: "Flows",
+        para: "Where modern UI sparks Salesforce speed.",
+        logo: flows,
+      },
+
+      {
         name: "React js",
         para: "The engine of interactive web.",
         logo: reactjs,
-      },
-      {
-        name: "Next.js",
-        para: "Where frontend meets full‑stack speed.",
-        logo: next,
       },
       {
         name: "Node js",
@@ -173,11 +196,6 @@ export const content = {
         logo: js,
       },
       {
-        name: "TypeScript",
-        para: "JavaScript with a safety net.",
-        logo: ts,
-      },
-      {
         name: "SQL",
         para: "Where data finds its voice.",
         logo: sql,
@@ -192,11 +210,6 @@ export const content = {
         para: "Utility-first, design at full speed.",
         logo: tailwind,
       },
-      {
-        name: "Jest & Supertest",
-        para: "Test with confidence, code with clarity.",
-        logo: jest,
-      },
     ],
     icon: MdArrowForward,
   },
@@ -205,18 +218,18 @@ export const content = {
     subtitle: "WHAT I OFFER",
     service_content: [
       {
-        title: "Web Development & Custom Software Development",
-        para: "Experienced in building and maintaining dynamic websites and web applications, with a strong understanding of frontend and backend development, databases, and deployment workflows, while focusing on functionality, scalability, and user experience.",
+        title: "Cloud-Ready CRM & Web Application Engineering",
+        para: "Experienced in engineering cloud-ready CRM solutions and modern web applications, with expertise in Salesforce (Apex, LWC, Lightning Experience) and full-stack JavaScript (MERN, Firebase). Skilled in building scalable systems that unify frontend and backend workflows, databases, and deployment pipelines, leveraging AWS, GCP, and Docker to deliver functionality, reliability, and seamless user experiences.",
         logo: services_logo1,
       },
       {
         title: "Specilized Service",
-        para: "I craft SEO‑ready Next.js personal websites that showcase dynamic portfolios, provide MERN‑powered career guides, deliver tailored interview preparation, and enable hands‑on project building — all designed for seamless functionality, scalability, and engaging user experiences.",
+        para: "I engineer cloud‑ready Salesforce solutions that deliver dynamic CRM experiences, build MERN‑powered career platforms, enable tailored interview preparation, and support hands‑on project development. With expertise in AWS, GCP, and Docker, I design scalable, reliable, and future‑ready systems that unify frontend and backend workflows. Blending technical precision with user‑centric design, I transform complex processes into intuitive, high‑impact applications.",
         logo: services_logo2,
       },
       {
         title: "Programming Mentorship",
-        para: "Experienced in providing programming guidance and mentorship, helping learners understand core concepts, improve problem‑solving skills, and build confidence in coding through clear explanations and practical examples.",
+        para: "I provide programming guidance and mentorship that helps learners grasp core concepts, strengthen problem‑solving skills, and build confidence in coding. Through clear explanations and practical examples, I make complex ideas approachable and actionable. My focus is on fostering both technical growth and self‑reliance, ensuring learners can apply knowledge effectively in real projects. By blending structured learning with hands‑on practice, I aim to transform challenges into opportunities for lasting skill development.",
         logo: services_logo3,
       },
     ],
@@ -246,7 +259,7 @@ export const content = {
     subtitle: "FOR YOUR PROJECTS",
     image1: Hireme_person,
     image2: Hireme_person2,
-    para: "Skilled in building scalable, full‑stack web applications with the MERN stack (MongoDB, Express.js, React.js, Node.js) and Next.js, delivering smooth performance, SEO‑friendly architecture, and intuitive user interfaces. Proficient in designing RESTful APIs, managing databases, and creating responsive front‑end experiences backed by reliable server logic.",
+    para: "Skilled in engineering scalable Salesforce solutions (Apex, LWC, Lightning Experience) that drive dynamic CRM workflows and intuitive user experiences. Experienced in building full‑stack web applications with the MERN stack, designing RESTful APIs, managing databases, and creating responsive front‑end interfaces backed by reliable server logic. Proficient in AWS, GCP, and Docker for robust deployment, seamless performance, and future‑ready scalability.",
     btnText: "Hire Me",
   },
   Contact: {
